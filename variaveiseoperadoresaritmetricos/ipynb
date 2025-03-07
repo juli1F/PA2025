@@ -1,0 +1,319 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyP0QFVRvUuyDs0Wpaz0oUNl",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/juli1F/PA2025/blob/main/variaveiseoperadoresaritmetricos/ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#variáveis e constantes"
+      ],
+      "metadata": {
+        "id": "Pcyb3UT5gRDW"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "V7R_iqgWf_v6"
+      },
+      "outputs": [],
+      "source": [
+        "idade = 14\n",
+        "altura = 1.57\n",
+        "nome = \"Juliana Barbosa\"\n",
+        "vai = True"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nomes = [\"Victoria Nunes\",\"Mariana\",\"Beatriz\"]\n",
+        "nomes2 = (\"Victoria Nunes\",\"Mariana\",\"Beatriz\")\n",
+        "tudo = {nome:\"Cínta Pinho\",idade:42,altura:1.52,vai:True}"
+      ],
+      "metadata": {
+        "id": "esIIba3biZpb"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(nome)\n",
+        "print(nomes)\n",
+        "print(nomes2)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "sm-4A0D2jO_k",
+        "outputId": "40f47250-5a44-42e3-d231-fedccd434219"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Juliana Barbosa\n",
+            "['Victoria Nunes', 'Mariana', 'Beatriz']\n",
+            "('Victoria Nunes', 'Mariana', 'Beatriz')\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "F7eXrMUCpM64"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(type(idade))\n",
+        "print(type(altura))\n",
+        "print(type(vai))\n",
+        "print(type(nome))\n",
+        "print(type(nomes))\n",
+        "print(type(nomes2))\n",
+        "print(type(tudo))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "NWSRgmUykQWJ",
+        "outputId": "6e47ce7b-9ecb-429d-f270-4375cfe0ccda"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'int'>\n",
+            "<class 'float'>\n",
+            "<class 'bool'>\n",
+            "<class 'str'>\n",
+            "<class 'list'>\n",
+            "<class 'tuple'>\n",
+            "<class 'dict'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"o nome dela é:\", nome, \",sua idade é\", idade, \",ela tem \", altura, \"metros\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1bEdMH3_mvt_",
+        "outputId": "11ad7381-9b76-4189-da52-fd116fadd5da"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "o nome dela é: Juliana Barbosa ,sua idade é 14 ,ela tem  1.57 metros\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nome = \"Ana\"\n",
+        "idade = 25\n",
+        "print(f\"Nome: {nome}, Idade: {idade}\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "IXEE9C1nr23W",
+        "outputId": "d017ff8c-aca9-4ee3-e484-463ebef530a4"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Nome: Ana, Idade: 25\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#Area do circulo"
+      ],
+      "metadata": {
+        "id": "pgt5MVPxvdic"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "PI = 3.14159\n",
+        "raio= float(input(\"Digite o valor do raio do círculo: \"))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "81X09luwvo-t",
+        "outputId": "0a680615-e65a-4952-a502-6eb3d4ef90ec"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Digite o valor do raio do círculo: 4\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "areacir= PI * (raio**2)"
+      ],
+      "metadata": {
+        "id": "-itvjFDpwH4Y"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(f\"A área do circulo é {areacir}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "JbsTaPNGxP5-",
+        "outputId": "01df51c6-9f97-45df-8270-af8aa773b86f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "A área do circuo é 50.26544\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#area do quadrado"
+      ],
+      "metadata": {
+        "id": "GN3DGL26zxlA"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lado = 4\n",
+        "area = float(input(\"Digite o valor do lado do quadrado: \"))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "39dPv9Fcz19g",
+        "outputId": "8fd9cfac-be79-4b5f-aad5-7c57cc4ef1de"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Digite o valor do lado do quadrado: 6\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "areaqua = (lado **2)"
+      ],
+      "metadata": {
+        "id": "gAaPqrG30iaT"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(f\"A area do quadrado é {areaqua}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "sWVhc54B1CXF",
+        "outputId": "1581f187-04aa-4573-ea37-4cc828c945d2"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "A area do quadrado é 16\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
